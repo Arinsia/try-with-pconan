@@ -12,6 +12,7 @@ from fastapi.responses import PlainTextResponse
 
 app = FastAPI()
 
+@app.get("/nun")
 def nun():
     return 'Hello nun'
 
