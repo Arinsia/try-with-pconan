@@ -27,6 +27,11 @@ async def main():
 async def test():
     return 'Test Tutorial'
 
+#ส่งงาน
+@app.get("/Assignment_add")
+async def add(a: int = 2343240987, b: int = 20034932):
+    return a+b
+
 @app.get("/add")
 async def add(a: int = 0, b: int = 0):
     return a+b
