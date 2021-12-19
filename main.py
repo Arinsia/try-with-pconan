@@ -35,11 +35,17 @@ async def add(a: int = 2343240987, b: int = 20034932):
 
 #ส่งงาน 2 with จ๋า อุ้ม
 @app.get("/assignment_2")
-Counter = 0
+def new_func():
+    Counter = 0
+    return Counter
+
+Counter = new_func()
 total = 0
 while Counter < 10:
+    print(Counter, end = " ")
     total += Counter
     Counter += 1
+print(" ")
 print(total)
 
 #ส่งงาน 2 
