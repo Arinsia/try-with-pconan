@@ -9,7 +9,6 @@ import math
 import requests
 from bs4 import BeautifulSoup
 from fastapi.responses import PlainTextResponse
-from math import sqrt
 
 app = FastAPI()
 
@@ -35,7 +34,7 @@ async def add(a: int = 2343240987, b: int = 20034932):
 
 #ส่งงาน 2 with จ๋า
 @app.get("/how_to_find_pythagorean")
-#from math import sqrt
+from math import sqrt
 
 print('Assume the sides are a, b, c and c is the hypotenuse (the side opposite the right angle')
 formula = input('Which side (a, b, c) do you wish to calculate? side> ')
