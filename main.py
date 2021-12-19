@@ -8,7 +8,6 @@ import numpy as np
 import re
 import requests
 import math
-import sqrt
 from bs4 import BeautifulSoup
 from fastapi.responses import PlainTextResponse
 
@@ -51,13 +50,13 @@ print(total)
 #formula = input('Which side (a, b, c) do you wish to calculate? side> ')
 
 #if formula == 'c':
-	side_a = int(input('Input the length of side a: '))
-	side_b = int(input('Input the length of side b: '))
+	#side_a = int(input('Input the length of side a: '))
+	#side_b = int(input('Input the length of side b: '))
 
-	side_c = sqrt(side_a * side_a + side_b * side_b)
+	#side_c = sqrt(side_a * side_a + side_b * side_b)
 	
-	print('The length of side c is: ' )
-	print(side_c)
+	#print('The length of side c is: ' )
+	#print(side_c)
 
 #elif formula == 'a':
     #side_b = int(input('Input the length of side b: '))
