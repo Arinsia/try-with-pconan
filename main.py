@@ -35,18 +35,12 @@ async def add(a: int = 2343240987, b: int = 20034932):
 
 #ส่งงาน 2 with จ๋า อุ้ม
 @app.get("/assignment_2")
-def new_func():
-    Counter = 5
-    return Counter
-
-Counter = new_func()
-total = 5
-while Counter < 10:
-    print(Counter, end = " ")
-    total += Counter
-    Counter += 1
-print(" ")
-print(total)
+list2 = [1,2,3]
+def total(list2):
+    summation = 0
+    for i in list2:
+        summation += i
+    return summation
 
 #ส่งงาน 2 
 #@app.get("/how_to_find_pythagorean")
@@ -84,7 +78,6 @@ print(total)
 
 #else:
 	#print('Please select a side between a, b, c')#/
-
 
 @app.get("/add")
 async def add(a: int = 0, b: int = 0):
