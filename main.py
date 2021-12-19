@@ -33,9 +33,9 @@ async def add(a: int = 2343240987, b: int = 20034932):
     return a+b
 
 #ส่งงาน 2 with จ๋า
+@app.get("/how_to_find_pythagorean")
 from math import sqrt
 
-print('Pythagorean theorem calculator! Calculate your triangle sides.')
 print('Assume the sides are a, b, c and c is the hypotenuse (the side opposite the right angle')
 formula = input('Which side (a, b, c) do you wish to calculate? side> ')
 
