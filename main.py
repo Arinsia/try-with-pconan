@@ -34,7 +34,7 @@ async def add(a: int = 2343240987, b: int = 20034932):
     return a+b
 
 #ส่งงาน 2 with จ๋า อุ้ม
-#@app.get("/how_to_find_pythagorean")
+'''@app.get("/how_to_find_pythagorean")
 from math import sqrt
 
 print('Assume the sides are a, b, c and c is the hypotenuse (the side opposite the right angle')
@@ -68,7 +68,7 @@ elif formula == 'b':
     print(side_c)
 
 else:
-	print('Please select a side between a, b, c')
+	print('Please select a side between a, b, c')'''
 
 
 @app.get("/add")
