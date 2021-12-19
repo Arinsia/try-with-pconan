@@ -36,14 +36,18 @@ async def add(a: int = 2343240987, b: int = 20034932):
 #ส่งงาน 2 with จ๋า อุ้ม
 @app.get("/how_to_find_pythagorean")
 
-def getlength():
-    length = float(input("Enter the a length here: "))
-    length_two = float(input("Enter b length here: "))
+def getlength1():
+    length = float(input("Enter length of triangle side here: "))
+    return length
 
-def calc_time(length, length_two):
-    hypo = (length**2 + length_two**2)
-    sqrt(hypo)
-    print("Your hypotenuse is: {}".format(sqrt(hypo)))
+side1 = getlength()
+side2 = getlength()
+
+def calcTriangle(side1, side2):
+    side3 = sqrt(side1 * side1 + side2 * side2)
+    print("The lenght of your third side is: %.2f" % side3)
+    
+calcTriangle(side1, side2)
 
 @app.get("/add")
 async def add(a: int = 0, b: int = 0):
