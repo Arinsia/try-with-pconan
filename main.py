@@ -34,6 +34,9 @@ async def add(a: int = 2343240987, b: int = 20034932):
 
 #ส่งงาน 2 with จ๋า อุ้ม
 @app.get("/how_to_find_pythagorean")
+from math import sqrt
+
+
 
 @app.get("/add")
 async def add(a: int = 0, b: int = 0):
