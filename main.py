@@ -34,7 +34,9 @@ async def test():
 async def add(a: int = 2343240987, b: int = 20034932):
     return a+b
 
-
+@app.get("/circle_area")
+async def circle_area(radius: float):
+    return math.pi * radius ** 2
 
 
 @app.get("/add")
