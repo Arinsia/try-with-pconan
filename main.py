@@ -33,15 +33,6 @@ async def test():
 async def add(a: int = 2343240987, b: int = 20034932):
     return a+b
 
-#ส่งงาน 2 with จ๋า อุ้ม
-@app.get("/assignment_2")
-list2 = [1,2,3]
-def total(list2):
-    summation = 0
-    for i in list2:
-        summation += i
-    return summation
-
 #ส่งงาน 2 
 @app.get("/how_to_find_pythagorean")
 from math import sqrt
@@ -74,7 +65,7 @@ elif formula == 'b':
     side_c = sqrt(side_c * side_c - side_a * side_a)
     
     print('The length of side b is')
-    #print(side_c)
+    print(side_c)
 
 else:
 	print('Please select a side between a, b, c')
