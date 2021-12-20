@@ -8,6 +8,7 @@ import numpy as np
 import re
 import requests
 import math
+from math import sqrt
 from bs4 import BeautifulSoup
 from fastapi.responses import PlainTextResponse
 
@@ -35,8 +36,7 @@ async def add(a: int = 2343240987, b: int = 20034932):
 
 
 #ส่งงาน 2 
-
-from math import sqrt
+app.get("/how_to_find_pythagorean")
 
 print('Assume the sides are a, b, c and c is the hypotenuse (the side opposite the right angle')
 formula = input('Which side (a, b, c) do you wish to calculate? side> ')
