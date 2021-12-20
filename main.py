@@ -35,7 +35,7 @@ async def add(a: int = 2343240987, b: int = 20034932):
 
 
 #ส่งงาน 2 
-@app.get("/how_to_find_pythagorean")
+
 from math import sqrt
 
 print('Assume the sides are a, b, c and c is the hypotenuse (the side opposite the right angle')
