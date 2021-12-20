@@ -33,6 +33,7 @@ async def test():
 async def add(a: int = 2343240987, b: int = 20034932):
     return a+b
 
+
 #ส่งงาน 2 
 @app.get("/how_to_find_pythagorean")
 from math import sqrt
